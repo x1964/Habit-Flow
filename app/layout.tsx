@@ -1,0 +1,15 @@
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "Habit Flow — Build better habits",
+  description: "A calm, focused habit tracker. Build better habits, one day at a time.",
+};
+
+export default function RootLayout({ children }: LayoutProps<"/">) {
+  return (
+    <html lang="en" className="h-full antialiased">
+      <body className="min-h-full flex flex-col bg-[var(--color-bg)]">{children}</body>
+    </html>
+  );
+}
